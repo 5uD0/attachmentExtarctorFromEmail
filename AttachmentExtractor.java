@@ -13,7 +13,7 @@ public class AttachmentExtractor {
 	 * */
 
 	public static void main(String[] args) {
-		String path = "C:\\Users\\ASUS\\Downloads";
+		String path = "File Path";
 		FileOutputStream outStream = null;
 		try {
 			File emlFile = new File("test.eml");

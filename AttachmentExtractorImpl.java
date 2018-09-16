@@ -17,7 +17,7 @@ import javax.mail.internet.MimeMultipart;
 public class AttachmentExtractor {
 
 	public static void main(String[] args) throws Exception {
-		String path = "C:\\Users\\ASUS\\Downloads\\original_msg2.eml";
+		String path = "path\\something.eml";
 		InputStream messageInputStream = new FileInputStream(new File(path));
 		MimeMessage message = new MimeMessage(null, messageInputStream);
 		AttachmentExtractorDemo messageParser = new AttachmentExtractorDemo(message);
@@ -33,7 +33,7 @@ public class AttachmentExtractor {
 		    for(byte b:valueDecoded) {
 		    	System.out.print(b);
 		    }
-		    Files.write(Paths.get("C:\\Users\\ASUS\\eclipse-workspace\\codegladiator2018\\ExtractEmail\\sudip.dat"), bytes);
+		    Files.write(Paths.get("path"), bytes);
 		}
 		 MimeMultipart obj = (MimeMultipart) message.getContent();
 		 MimeMultipart obj1 = new MimeMultipart();
